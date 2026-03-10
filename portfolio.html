@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+<!-- Grundlegende Metadaten fuer Zeichensatz und Responsive-Verhalten -->
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Vanelle Tchinda — Developer Portfolio</title>
+<!-- Externe Schriften fuer Headlines, Fliesstext und Monospace-Elemente -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=Syne+Mono&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300&display=swap" rel="stylesheet"/>
+<!-- Zentrale Styles liegen ausgelagert in styles.css -->
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<!-- Cursor-Element fuer den dezenten Desktop-Effekt -->
+<div class="simple-cursor" id="simpleCursor"></div>
+
+<!-- Fixe Hauptnavigation mit Theme-Schalter -->
+<nav>
+  <!-- Logo springt zum Startbereich -->
+  <a href="#hero" class="n-logo">VT.dev</a>
+  <div class="n-r">
+    <!-- Sprachumschalter fuer Deutsch, Englisch und Franzoesisch -->
+    <div class="lang-switch" role="group" aria-label="Sprachauswahl">
+      <button class="lbtn on" data-lang="de" aria-pressed="true">DE</button>
+      <button class="lbtn" data-lang="en" aria-pressed="false">EN</button>
+      <button class="lbtn" data-lang="fr" aria-pressed="false">FR</button>
+    </div>
+    <!-- Interne Sprunglinks fuer One-Page-Navigation -->
+    <ul class="n-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projekte</a></li>
+      <li><a href="#experience">Erfahrung</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+    </ul>
+    <!-- Theme-Schalter: Hellmodus und Dunkelmodus -->
+    <button class="tbtn" id="tb">☽</button>
+  </div>
+</nav>
+
+<!-- Hero-Bereich mit Intro und Call-to-Action -->
+<section id="hero">
+  <!-- Hintergrundraster fuer den visuellen Einstieg -->
+  <div class="hgrid"></div>
+  <!-- Weiche Farb-Orbs fuer Tiefe im Hero -->
+  <div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
+  <div class="hside">Saarbrücken · DE · 2026</div>
+  <div class="hcon">
+    <!-- Kurze Rollenbeschreibung -->
+    <p class="heye"><span></span>Fullstack Developer · HTW Saarbrücken</p>
+    <h1 class="hname">
+      <span style="display:block"><em>Vanelle</em></span>
+      <span style="display:block" class="ghost">Tchinda</span>
+    </h1>
+    <div class="hbot">
+      <p class="hdesc">Informatikstudentin mit Leidenschaft für verteilte Systeme, saubere Architektur und intuitive Web-Erlebnisse. Von der CLI bis zum UI.</p>
+      <!-- Primaerer und sekundaerer Call-to-Action -->
+      <div class="hctas">
+        <a href="#projects" class="btn btnf">Projekte →</a>
+        <a href="#contact" class="btn btnf">Kontakt</a>
+        <a href="Acv%20.pdf" class="btn btnf" download="Vanelle_Tchinda_CV.pdf">CV herunterladen</a>
+      </div>
+    </div>
+  </div>
+  <div class="sind"><div class="sline"></div><span class="slbl">Scroll</span></div>
+</section>
+
+<!-- Laufband mit Kerntechnologien -->
+<div class="mqs">
+  <!-- Doppelte Eintraege sorgen fuer endlosen Scroll-Effekt -->
+  <div class="mqin">
+    <span class="mqit">React</span><span class="mqit">Node.js</span><span class="mqit">Java</span><span class="mqit">gRPC</span><span class="mqit">SQLite</span><span class="mqit">PHP</span><span class="mqit">Git</span><span class="mqit">Maven</span><span class="mqit">MailHog</span><span class="mqit">Distributed Systems</span><span class="mqit">JavaScript</span><span class="mqit">CSS</span><span class="mqit">Machine Learning</span><span class="mqit">i18n</span><span class="mqit">Protobuf</span>
+    <span class="mqit">React</span><span class="mqit">Node.js</span><span class="mqit">Java</span><span class="mqit">gRPC</span><span class="mqit">SQLite</span><span class="mqit">PHP</span><span class="mqit">Git</span><span class="mqit">Maven</span><span class="mqit">MailHog</span><span class="mqit">Distributed Systems</span><span class="mqit">JavaScript</span><span class="mqit">CSS</span><span class="mqit">Machine Learning</span><span class="mqit">i18n</span><span class="mqit">Protobuf</span>
+  </div>
+</div>
+
+<!-- Abschnitt: Ueber mich -->
+<section id="about">
+  <div class="mw">
+    <div class="abg">
+      <div>
+        <div class="sk rv">Über mich</div>
+        <h2 class="stit rv"><em>Dev</em> aus Saarbrücken</h2>
+        <div class="abt rv">
+          <p>Ich bin <strong>Vanelle</strong>, Informatikstudentin im B.Sc. an der HTW Saarbrücken. Ursprünglich aus Kamerun — ich baue Dinge, die wirklich funktionieren, von verteilten Java-Systemen bis zu dreisprachigen React-Apps.</p>
+          <p>Mein Antrieb ist das <strong>vollständige Spektrum</strong> der Entwicklung: saubere Backend-Architektur, intuitive UIs und die unsichtbare Schicht dazwischen, die alles zusammenhält.</p>
+          <p>Bis zum <strong>1. März 2026</strong> war ich Werkstudentin bei <strong>Saar Metall GmbH</strong>, wo ich echte Anforderungen in produktionsreife Software übersetzt habe.</p>
+        </div>
+      </div>
+      <div>
+        <div class="stg rv">
+          <div class="stb"><div class="stn">6+</div><div class="stl">Projekte</div></div>
+          <div class="stb"><div class="stn">2+</div><div class="stl">Jahre Studium</div></div>
+          <div class="stb"><div class="stn">3</div><div class="stl">Sprachen</div></div>
+          <div class="stb"><div class="stn">∞</div><div class="stl">Lernbereitschaft</div></div>
+        </div>
+        <div class="lcs rv">
+          <div class="lc"><span class="ln">Français</span><span class="lb">Muttersprache</span></div>
+          <div class="lc"><span class="ln">Deutsch</span><span class="lb">C1 · TelC</span></div>
+          <div class="lc"><span class="ln">English</span><span class="lb">Grundkenntnisse</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Abschnitt: Projekte -->
+<section id="projects">
+  <div class="mw">
+    <div class="prtop rv">
+      <div><div class="sk">Projekte</div><h2 class="stit" style="margin-bottom:0">Was ich <em>gebaut</em> habe</h2></div>
+      <span class="pcnt">07 Projekte</span>
+    </div>
+
+    <!-- PROJEKT 01: DAILYKIT -->
+    <div class="pfeat rv project-dailykit">
+      <!-- Linke Spalte: Screenshots -->
+      <div class="pvis">
+        <div class="pmedia-grid wiss">
+          <figure class="shot tall"><img src="assets/dailykit-2.png" alt="DailyKit Editor"/></figure>
+          <figure class="shot tall"><img src="assets/dailykit-3.png" alt="DailyKit Kartenansicht"/></figure>
+        </div>
+      </div>
+      <!-- Rechte Spalte: Beschreibung, Features und Stack -->
+      <div class="pinf">
+        <div class="pn">01 · Featured Project</div>
+        <h3 class="pname">DailyKit</h3>
+        <div class="psub">Journal · Budget · Notizen · Dreisprachig</div>
+        <p class="pdesc">All-in-One Notizbuch-App mit Journal, Budget und Notizen. Fokus auf klare UX, mobile Darstellung und schnelle Bearbeitung mit Export-Funktionen.</p>
+        <ul class="fl">
+          <li><span class="fa">▸</span>Registrierung &amp; Login mit E-Mail-Bestätigung via MailHog</li>
+          <li><span class="fa">▸</span>Journal-Einträge mit Kategorien, Suche und Detailansicht</li>
+          <li><span class="fa">▸</span>Budget-Übersicht mit strukturierter Kartenansicht</li>
+          <li><span class="fa">▸</span>Notizen erstellen, bearbeiten, löschen und als <code style="color:var(--c1);font-family:var(--fm);font-size:.8em">.txt</code> exportieren</li>
+          <li><span class="fa">▸</span>Einstellungs-Modal (Profil, Sprache, Passwort, Modus)</li>
+          <li><span class="fa">▸</span>Dreisprachig: Deutsch, Englisch, Französisch · responsive auf Mobile und Desktop</li>
+        </ul>
+        <div class="ts"><span class="tt">React</span><span class="tt">PHP</span><span class="tt">JavaScript</span><span class="tt">SQLite</span><span class="tt">MailHog</span><span class="tt">CSS</span><span class="tt">i18n</span></div>
+      </div>
+    </div>
+
+    <!-- PROJEKT 02: VERTEILTER CACHE -->
+    <div class="pfeat rv project-dc" style="direction:rtl">
+      <!-- Linke Spalte: CLI-Screenshots -->
+      <div class="pvis dark" style="direction:ltr">
+        <div class="pmedia-grid wiss">
+          <figure class="shot tall"><img src="assets/cache-cli-1.png" alt="Distributed Cache CLI Start und Help"/></figure>
+          <figure class="shot tall"><img src="assets/cache-cli-3.png" alt="Distributed Cache Benchmark"/></figure>
+        </div>
+      </div>
+      <!-- Rechte Spalte: Systembeschreibung und Session-Output -->
+      <div class="pinf" style="direction:ltr">
+        <div class="pn">02 · Systems Project</div>
+        <h3 class="pname">Distributed Cache</h3>
+        <div class="psub">Verteiltes System · Java · gRPC · REST · CLI</div>
+        <p class="pdesc">Verteiltes Key-Value-Cache-System mit RegistryService, mehreren CacheNodes und interaktiver User-CLI. Kommunikation kombiniert REST (Verwaltung) und gRPC (Datenpfad).</p>
+        <ul class="fl">
+          <li><span class="fa">▸</span>User-CLI mit Auth: <code style="color:var(--c1);font-family:var(--fm);font-size:.8em">register, login, logout</code></li>
+          <li><span class="fa">▸</span>Key-Value-Befehle: <code style="color:var(--c1);font-family:var(--fm);font-size:.8em">put, get, delete, take</code> + optionales TTL</li>
+          <li><span class="fa">▸</span>Registry-Service (REST) für Node-Liste, Heartbeat und Status</li>
+          <li><span class="fa">▸</span>gRPC zwischen ClientAPI und CacheNodes für performante Operationen</li>
+          <li><span class="fa">▸</span>Node-zu-Node Replikation und parallele Worker-Tests erfolgreich</li>
+          <li><span class="fa">▸</span>Metriken und Benchmark-Auswertung aus der CLI</li>
+        </ul>
+        <div class="pcode" style="margin-bottom:26px;">
+          <!-- Beispielhafte Interaktion aus der realen CLI -->
+          <h4>Distributed Cache CLI Session</h4>
+          <pre>sds&gt; register van 123
+REGISTER: success=true message=registered
+sds&gt; login van 123
+LOGIN: success=true message=ok
+Logged in. Token expires at epoch_ms=1772591765681
+sds&gt; put k1 v1
+PUT: ok
+sds&gt; get k1
+GET: v1
+sds&gt; quit
+
+Stopping services...
+Stopped.</pre>
+        </div>
+        <div class="ts"><span class="tt">Java</span><span class="tt">Maven</span><span class="tt">gRPC</span><span class="tt">REST</span><span class="tt">Protobuf</span><span class="tt">Multithreading</span><span class="tt">CLI</span></div>
+      </div>
+    </div>
+
+    <!-- PROJEKT 03: SHOPPINGLISTAPP (CLI) -->
+    <div class="pfeat rv project-shopping">
+      <!-- Linke Spalte: Textbasierter CLI-Ablauf -->
+      <div class="pvis">
+        <div class="pcode">
+          <h4>ShoppingListApp CLI Flow</h4>
+          <pre>login noel 1234
+create-list weekend
+add-item weekend milk
+add-item weekend bread
+search-item weekend milk
+delete-item weekend bread
+delete-list weekend</pre>
+        </div>
+      </div>
+      <!-- Rechte Spalte: Projektzusammenfassung -->
+      <div class="pinf">
+        <div class="pn">03 · CLI Project</div>
+        <h3 class="pname">ShoppingListApp</h3>
+        <div class="psub">Java · CLI · Auth · Listenverwaltung</div>
+        <p class="pdesc">Reines Java-CLI Projekt ohne Frontend. Fokus auf robuste Kommando-Logik, Benutzerfluss und saubere Trennung zwischen Authentifizierung und Listen-Operationen.</p>
+        <ul class="fl">
+          <li><span class="fa">▸</span>Einloggen mit Benutzername und Passwort</li>
+          <li><span class="fa">▸</span>Shoppingliste erstellen und löschen</li>
+          <li><span class="fa">▸</span>Items hinzufügen, löschen und suchen</li>
+          <li><span class="fa">▸</span>Klarer CLI-Flow für schnellen Alltagseinsatz</li>
+        </ul>
+        <div class="ts"><span class="tt">Java</span><span class="tt">CLI</span><span class="tt">Maven</span><span class="tt">OOP</span></div>
+      </div>
+    </div>
+
+    <!-- PROJEKT 04: WETTER APP -->
+    <div class="pfeat rv project-weather" style="direction:rtl">
+      <!-- Linke Spalte: Frontend-Screenshots -->
+      <div class="pvis" style="direction:ltr">
+        <div class="pmedia-grid wiss">
+          <figure class="shot tall"><img src="assets/Homepage.png" alt="WetterApp Startseite mit aktueller Wetterlage"/></figure>
+          <figure class="shot tall"><img src="assets/Startseite.png" alt="WetterApp mit Vorhersage und Suche"/></figure>
+        </div>
+      </div>
+      <!-- Rechte Spalte: Funktionsumfang und Technologien -->
+      <div class="pinf" style="direction:ltr">
+        <div class="pn">04 · Frontend Project</div>
+        <h3 class="pname">WetterApp</h3>
+        <div class="psub">React · Vite · Tailwind · Open-Meteo API</div>
+        <p class="pdesc">Moderne Wetter-App mit aktueller Wetterlage und 7-Tage-Vorhersage. Die Anwendung kombiniert Stadtsuche, Geolokalisierung, Suchverlauf und Temperaturumschaltung in einem responsiven One-Screen-Layout.</p>
+        <ul class="fl">
+          <li><span class="fa">▸</span>Stadtsuche per Texteingabe und Wetterabfrage ueber Open-Meteo APIs</li>
+          <li><span class="fa">▸</span>Aktueller Standort via Browser-Geolokalisierung + Reverse-Geocoding</li>
+          <li><span class="fa">▸</span>Aktuelles Wetter: Stadt, Land, Temperatur, Zustand, Wind und Messzeit</li>
+          <li><span class="fa">▸</span>7-Tage-Vorhersage mit Tagesnamen, Wetter-Emoji und Max-/Min-Werten</li>
+          <li><span class="fa">▸</span>Globaler Wechsel zwischen Celsius und Fahrenheit fuer alle Werte</li>
+          <li><span class="fa">▸</span>Suchverlauf in localStorage mit Duplikat-Entfernung und Clear-Funktion</li>
+        </ul>
+        <div class="ts"><span class="tt">React 19</span><span class="tt">Vite 7</span><span class="tt">Tailwind CSS 3</span><span class="tt">Axios</span><span class="tt">Open-Meteo</span><span class="tt">Geolocation</span></div>
+      </div>
+    </div>
+
+    <!-- PROJEKT 05: WISSENSCHAFTLICHES ARBEITEN -->
+    <div class="pfeat rv project-wiss" style="direction:rtl">
+      <!-- Linke Spalte: Produktansichten -->
+      <div class="pvis" style="direction:ltr">
+        <div class="pmedia-grid wiss">
+          <figure class="shot tall"><img src="assets/wiss-arbeiten-1.jpeg" alt="Wissenschaftliches Arbeiten Übersicht"/></figure>
+          <figure class="shot tall"><img src="assets/wiss-arbeiten-2.jpeg" alt="Wissenschaftliches Arbeiten Detailbearbeitung"/></figure>
+        </div>
+      </div>
+      <!-- Rechte Spalte: Features und eingesetzte Technologien -->
+      <div class="pinf" style="direction:ltr">
+        <div class="pn">05 · Frontend Project</div>
+        <h3 class="pname">Wissenschaftliches Arbeiten Tool</h3>
+        <div class="psub">BibTeX Import · Suche · Edit · Export</div>
+        <p class="pdesc">Tool zum Importieren, Durchsuchen und Bearbeiten von BibTeX-Einträgen mit direktem Export. Ausgelegt auf schnelle Navigation auch bei vielen Datensätzen.</p>
+        <ul class="fl">
+          <li><span class="fa">▸</span>BibTeX Datei importieren und Datensätze listen</li>
+          <li><span class="fa">▸</span>Suche + Accordion-Ansicht mit aufklappbaren Details</li>
+          <li><span class="fa">▸</span>Inline-Edit einzelner Felder mit Bestätigen/Abbrechen</li>
+          <li><span class="fa">▸</span>Pagination und strukturierter Export</li>
+        </ul>
+        <div class="ts"><span class="tt">JavaScript</span><span class="tt">HTML</span><span class="tt">CSS</span><span class="tt">BibTeX</span></div>
+      </div>
+    </div>
+
+    <!-- PROJEKT 06: MASCHINELLES LERNEN -->
+    <div class="pfeat rv project-ml">
+      <!-- Linke Spalte: Kennzahlen des ML-Projekts -->
+      <div class="pvis">
+        <div class="pmetric">
+          <h4>Movie Clustering - Key Metrics</h4>
+          <div class="pmetric-grid">
+            <div class="pmetric-item"><strong>1,248,748</strong><span>Initiale Filme im Datensatz</span></div>
+            <div class="pmetric-item"><strong>979,133</strong><span>Filme nach Cleaning mit validem Overview</span></div>
+            <div class="pmetric-item"><strong>10,000</strong><span>TF-IDF Features (Keywords + Overview)</span></div>
+            <div class="pmetric-item"><strong>0.67</strong><span>Beste Silhouette (DBSCAN Konfiguration)</span></div>
+          </div>
+        </div>
+      </div>
+      <!-- Rechte Spalte: Vorgehen und Methoden -->
+      <div class="pinf">
+        <div class="pn">06 · Machine Learning</div>
+        <h3 class="pname">Movie Clustering (ML)</h3>
+        <div class="psub">TF-IDF · K-Means · DBSCAN · HAC · t-SNE</div>
+        <p class="pdesc">Großes Clustering-Projekt zur Gruppierung von Filmen auf Basis von <code style="font-size:.85em">keywords</code> und <code style="font-size:.85em">overview</code>. Vergleich mehrerer Algorithmen inklusive Visualisierung der Clusterstruktur.</p>
+        <ul class="fl">
+          <li><span class="fa">▸</span>Datenbereinigung und Text-Preprocessing für sehr große Datenmengen</li>
+          <li><span class="fa">▸</span>TF-IDF Vektorisierung mit sparsamer Repräsentation</li>
+          <li><span class="fa">▸</span>Vergleich von K-Means, DBSCAN und HAC</li>
+          <li><span class="fa">▸</span>t-SNE zur visuellen Prüfung der Cluster-Trennung</li>
+        </ul>
+        <div class="ts"><span class="tt">Python</span><span class="tt">scikit-learn</span><span class="tt">TF-IDF</span><span class="tt">Clustering</span><span class="tt">PCA</span></div>
+      </div>
+    </div>
+
+    <!-- PROJEKT 07: SAAR METALL -->
+    <div class="pfeat rv project-saar" style="direction:rtl">
+      <!-- Linke Spalte: Praxisnahe Aufgaben im Unternehmen -->
+      <div class="pvis" style="direction:ltr">
+        <div class="pcase">
+          <h4>Werkstudentin - Saar Metall GmbH</h4>
+          <ul>
+            <li>Dokumenten-Management-System für interne Prozesse implementiert</li>
+            <li>Reklamationssystem für Lieferungen mit klaren Workflows umgesetzt</li>
+            <li>Anforderungen aus dem Fachbereich in produktionsnahe Software übersetzt</li>
+            <li>Zusammenarbeit im Team mit professionellem Versionsmanagement</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Rechte Spalte: Rolle, Kontext und Kompetenzprofil -->
+      <div class="pinf" style="direction:ltr">
+        <div class="pn">07 · Professional Experience</div>
+        <h3 class="pname">Saar Metall GmbH</h3>
+        <div class="psub">Werkstudentin · Softwareentwicklung</div>
+        <p class="pdesc">Praxisprojekt im Unternehmenskontext mit Fokus auf Stabilität, nachvollziehbare Prozesse und enge Abstimmung mit realen Nutzeranforderungen.</p>
+        <ul class="fl">
+          <li><span class="fa">▸</span>Dokumenten-Management und Reklamationsprozesse digitalisiert</li>
+          <li><span class="fa">▸</span>Saubere und wartbare Fullstack-Umsetzung</li>
+          <li><span class="fa">▸</span>Fokus auf zuverlässige Software im produktiven Alltag</li>
+        </ul>
+        <div class="ts"><span class="tt">Fullstack</span><span class="tt">Git</span><span class="tt">Business</span><span class="tt">Teamwork</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Abschnitt: Erfahrung und Ausbildung -->
+<section id="experience">
+  <div class="mw">
+    <div class="sk rv">Werdegang</div>
+    <h2 class="stit rv">Erfahrung &amp; <em>Ausbildung</em></h2>
+    <div class="exl">
+      <div class="exs rv">
+        <!-- Klickbare Filter fuer den Lebenslauf -->
+        <ul class="exf">
+          <li class="on" data-filter="alle">Alle</li>
+          <li data-filter="beruf">Beruf</li>
+          <li data-filter="studium">Studium</li>
+          <li data-filter="zertifikate">Zertifikate</li>
+        </ul>
+      </div>
+      <div class="eis">
+        <!-- Berufserfahrung -->
+        <div class="ei" data-type="beruf"><div class="eim"><span class="eip">Apr. 2025 — 1. März 2026</span><span class="eib">Beruf</span></div><div class="eiro">Werkstudentin Softwareentwicklung</div><div class="eico">Saar Metall GmbH · Saarbrücken</div><ul class="ept"><li>Entwicklung eines Dokumenten-Management-Systems</li><li>Umsetzung eines Reklamationssystems für Lieferungen</li><li>Mitarbeit an internen IT-Projekten</li></ul></div>
+        <!-- Studium -->
+        <div class="ei" data-type="studium"><div class="eim"><span class="eip">2023 — laufend</span><span class="eib">Studium</span></div><div class="eiro">B.Sc. Praktische Informatik</div><div class="eico">HTW Saarbrücken</div><ul class="ept"><li>Softwareentwicklung, Algorithmen, Datenbanken</li><li>Java, React, Node.js, PHP, SQL, gRPC</li><li>Machine Learning &amp; Verteilte Systeme</li></ul></div>
+        <!-- Weitere Berufserfahrung -->
+        <div class="ei" data-type="beruf"><div class="eim"><span class="eip">Jan. 2024 — 15. März 2026</span><span class="eib">Beruf</span></div><div class="eiro">ServiceKraft</div><div class="eico">Kunz Theater · Saarbrücken</div><ul class="ept"><li>Kundenbetreuung und Bestellungsmanagement</li><li>Koordination mit Küchenteam</li></ul></div>
+        <!-- Sprachzertifikat -->
+        <div class="ei" data-type="zertifikate"><div class="eim"><span class="eip">Juni 2023</span><span class="eib">Zertifikat</span></div><div class="eiro">TelC C1 Hochschule</div><div class="eico">Sprachzertifikat Deutsch</div></div>
+        <!-- Frueherer Schulabschluss -->
+        <div class="ei" data-type="studium"><div class="eim"><span class="eip">Sept. 2020 — Juni 2021</span><span class="eib">Studium</span></div><div class="eiro">Abitur</div><div class="eico">Gymnasium Bafoussam · Kamerun</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Abschnitt: Skills -->
+<section id="skills">
+  <div class="mw">
+    <div class="sk rv">Technologien</div>
+    <h2 class="stit rv">Tech <em>Stack</em></h2>
+    <div class="skg">
+      <!-- Karte 1: Frontend -->
+      <div class="skc rv"><div class="skt">// Frontend</div><div class="skr"><div class="skd"></div><span class="sktx">HTML &amp; CSS</span></div><div class="skr"><div class="skd"></div><span class="sktx">JavaScript ES6+</span></div><div class="skr"><div class="skd"></div><span class="sktx">React</span></div><div class="skr"><div class="skd"></div><span class="sktx">Tailwind CSS</span></div><div class="skr"><div class="skd"></div><span class="sktx">Responsive Design</span></div><div class="skr"><div class="skd"></div><span class="sktx">Dark / Light Mode</span></div><div class="skr"><div class="skd"></div><span class="sktx">i18n (3 Sprachen)</span></div></div>
+      <!-- Karte 2: Backend -->
+      <div class="skc rv"><div class="skt">// Backend</div><div class="skr"><div class="skd"></div><span class="sktx">Node.js + Express</span></div><div class="skr"><div class="skd"></div><span class="sktx">PHP</span></div><div class="skr"><div class="skd"></div><span class="sktx">Java</span></div><div class="skr"><div class="skd"></div><span class="sktx">REST APIs</span></div><div class="skr"><div class="skd"></div><span class="sktx">gRPC / Protobuf</span></div><div class="skr"><div class="skd"></div><span class="sktx">MailHog SMTP</span></div></div>
+      <!-- Karte 3: Daten und Systeme -->
+      <div class="skc rv"><div class="skt">// Data &amp; Systems</div><div class="skr"><div class="skd"></div><span class="sktx">SQL (relationale DB)</span></div><div class="skr"><div class="skd"></div><span class="sktx">SQLite</span></div><div class="skr"><div class="skd"></div><span class="sktx">Verteilte Systeme</span></div><div class="skr"><div class="skd"></div><span class="sktx">Multithreading</span></div><div class="skr"><div class="skd"></div><span class="sktx">Machine Learning</span></div><div class="skr"><div class="skd"></div><span class="sktx">Maven</span></div></div>
+      <!-- Karte 4: Tools und Soft Skills -->
+      <div class="skc rv"><div class="skt">// Tools &amp; Soft</div><div class="skr"><div class="skd"></div><span class="sktx">Git / GitLab</span></div><div class="skr"><div class="skd"></div><span class="sktx">CLI-Entwicklung</span></div><div class="skr"><div class="skd"></div><span class="sktx">Analytisches Denken</span></div><div class="skr"><div class="skd"></div><span class="sktx">Teamarbeit</span></div><div class="skr"><div class="skd"></div><span class="sktx">Strukturierte Arbeitsweise</span></div><div class="skr"><div class="skd"></div><span class="sktx">Schnelle Lernkurve</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Abschnitt: Kontakt -->
+<section id="contact">
+  <div class="mw ctin">
+    <div class="sk rv">Kontakt</div>
+    <h2 class="ctbig rv">Let's<br>build<br><em>together.</em></h2>
+    <div class="ctr rv">
+      <div class="ctls">
+        <!-- Direkte Kontaktkanaele -->
+        <a href="mailto:ntchindakuegouo@gmail.com" class="ctl"><span>✉</span><span>ntchindakuegouo@gmail.com</span><span class="arr">→</span></a>
+        <a href="tel:+4901746419288" class="ctl"><span>✆</span><span>+49 01746419288</span><span class="arr">→</span></a>
+      </div>
+      <!-- Standort und Adresse -->
+      <div class="ctloc"><strong>Saarbrücken</strong>Albertstraße 7<br>66125 Saarbrücken<br>Deutschland</div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <span class="ft">© 2026 Vanelle Tchinda</span>
+  <span class="ft">HTML · CSS · JS</span>
+  <span class="ft">Portfolio 2026</span>
+</footer>
+
+<script src="translations.js"></script>
+<!-- Interaktionen: Cursor, Theme, Scroll-Animationen und Filter -->
+<script>
+// Einfacher Cursor nur auf Geraeten mit praezisem Zeiger
+const simpleCursor=document.getElementById('simpleCursor');
+if(simpleCursor&&window.matchMedia('(pointer:fine)').matches){
+  // Zielposition (mx/my) und sanfte aktuelle Position (cx/cy)
+  let mx=window.innerWidth/2,my=window.innerHeight/2,cx=mx,cy=my;
+  let visible=false;
+  document.addEventListener('mousemove',e=>{
+    // Mauskoordinaten laufend aktualisieren
+    mx=e.clientX;
+    my=e.clientY;
+    if(!visible){
+      // Cursor wird erst bei der ersten Bewegung eingeblendet
+      simpleCursor.style.opacity='.8';
+      visible=true;
+    }
+  });
+  document.addEventListener('mouseleave',()=>{
+    // Cursor ausblenden, wenn der Zeiger das Fenster verlaesst
+    simpleCursor.style.opacity='0';
+    visible=false;
+  });
+  const tick=()=>{
+    // Weiches Nachziehen statt harter Spruenge
+    cx+=(mx-cx)*.32;
+    cy+=(my-cy)*.32;
+    simpleCursor.style.left=cx+'px';
+    simpleCursor.style.top=cy+'px';
+    requestAnimationFrame(tick);
+  };
+  tick();
+}
+
+// Umschalter fuer Hell- und Dunkelmodus
+const tb=document.getElementById('tb');
+const syncThemeButton=()=>{
+  // Symbol folgt dem aktiven Theme
+  const dark=document.documentElement.getAttribute('data-theme')==='dark';
+  tb.textContent=dark?'☀':'☽';
+};
+tb.addEventListener('click',()=>{
+  // Theme toggeln und Symbol danach synchronisieren
+  const dark=document.documentElement.getAttribute('data-theme')==='dark';
+  document.documentElement.setAttribute('data-theme',dark?'light':'dark');
+  syncThemeButton();
+});
+syncThemeButton();
+
+// Scroll-Reveal fuer Sektionen und Eintraege
+// Elemente erhalten bei Sichtbarkeit die Klasse "vis"
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('vis');});},{threshold:.08});
+document.querySelectorAll('.rv,.ei').forEach(el=>obs.observe(el));
+// Staggered Animation fuer Timeline-Eintraege
+document.querySelectorAll('.ei').forEach((el,i)=>{el.style.transitionDelay=`${i*.09}s`;});
+
+// Progressive Animation fuer Tech-Stack-Karten (Frontend -> Backend -> ...)
+const skillsSection=document.getElementById('skills');
+const skillCards=[...document.querySelectorAll('#skills .skc')];
+let skillsAnimated=false;
+const revealSkillCards=()=>{
+  if(skillsAnimated||!skillCards.length)return;
+  skillsAnimated=true;
+  const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  skillCards.forEach((card,index)=>{
+    const delay=reduceMotion?0:index*180;
+    window.setTimeout(()=>card.classList.add('stack-on'),delay);
+  });
+};
+if(skillsSection&&skillCards.length){
+  const skillObserver=new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        revealSkillCards();
+        skillObserver.disconnect();
+      }
+    });
+  },{threshold:.2});
+  skillObserver.observe(skillsSection);
+}
+
+// Filterlogik fuer Erfahrung und Ausbildung
+const expButtons=[...document.querySelectorAll('.exf li[data-filter]')];
+const expItems=[...document.querySelectorAll('.ei[data-type]')];
+const setExperienceFilter=(filter,scroll=true)=>{
+  let firstVisible=null;
+  // Aktiven Button markieren
+  expButtons.forEach(btn=>btn.classList.toggle('on',btn.dataset.filter===filter));
+  expItems.forEach(item=>{
+    // Sichtbarkeit je nach Kategorie setzen
+    const show=filter==='alle'||item.dataset.type===filter;
+    item.style.display=show?'':'none';
+    item.hidden=!show;
+    // Erstes sichtbares Element merken
+    if(show&&!firstVisible)firstVisible=item;
+  });
+  if(scroll&&firstVisible){
+    // Nach Filterwechsel zum ersten Treffer scrollen
+    firstVisible.scrollIntoView({behavior:'smooth',block:'start'});
+  }
+};
+expButtons.forEach(btn=>{
+  // Klick verknuepft Button mit passendem Filter
+  btn.addEventListener('click',()=>setExperienceFilter(btn.dataset.filter,true));
+});
+// Initialzustand: alle Eintraege sichtbar
+setExperienceFilter('alle',false);
+
+// Mehrsprachigkeit: Deutsch, Englisch und Franzoesisch
+const langButtons=[...document.querySelectorAll('.lbtn[data-lang]')];
+// HTML-Entities in normalen Texten entschluesseln (z. B. &amp; -> &)
+const decodeTextEntity=(value)=>{
+  if(typeof value!=='string')return value;
+  return value
+    .replace(/&amp;/g,'&')
+    .replace(/&lt;/g,'<')
+    .replace(/&gt;/g,'>')
+    .replace(/&quot;/g,'"')
+    .replace(/&#39;/g,"'");
+};
+const setText=(selector,value)=>{
+  const el=document.querySelector(selector);
+  if(el&&value!==undefined)el.textContent=decodeTextEntity(value);
+};
+const setHtml=(selector,value)=>{
+  const el=document.querySelector(selector);
+  if(el&&value!==undefined)el.innerHTML=value;
+};
+const setTextAll=(selector,values)=>{
+  const els=document.querySelectorAll(selector);
+  els.forEach((el,i)=>{if(values[i]!==undefined)el.textContent=decodeTextEntity(values[i]);});
+};
+const setHtmlAll=(selector,values)=>{
+  const els=document.querySelectorAll(selector);
+  els.forEach((el,i)=>{if(values[i]!==undefined)el.innerHTML=values[i];});
+};
+
+// Uebersetzungsquelle aus externer Datei laden.
+// In translations.js liegt das Objekt unter window.PORTFOLIO_I18N.
+// Falls die Datei einmal fehlt, verhindert das leere Objekt JS-Fehler.
+const I18N=window.PORTFOLIO_I18N||{};
+
+// Sprache auf die komplette Seite anwenden.
+// Die Funktion ist zentral, damit alle sichtbaren Texte in einem Durchlauf
+// konsistent gesetzt werden und keine Mischsprache entsteht.
+const setLanguage=(lang)=>{
+  // Gewuenschte Sprache laden, sonst auf Deutsch zurueckfallen
+  const t=I18N[lang]||I18N.de;
+  // Sprachcode am HTML-Element aktualisieren
+  document.documentElement.lang=lang;
+  // Seitentitel in der gewaehlten Sprache setzen
+  document.title=t.title;
+  // Wahl persistent speichern
+  localStorage.setItem('portfolioLang',lang);
+
+  // Sprachbuttons visuell und semantisch aktualisieren
+  langButtons.forEach(btn=>{
+    const active=btn.dataset.lang===lang;
+    btn.classList.toggle('on',active);
+    btn.setAttribute('aria-pressed',active?'true':'false');
+  });
+
+  // Navigation und Hero-Block uebersetzen.
+  // Reihenfolge muss den Elementen im DOM entsprechen.
+  setTextAll('.n-links a',t.nav);
+  setText('.heye',t.heroEyebrow);
+  setText('.hdesc',t.heroDesc);
+  setTextAll('.hctas .btn',t.heroCtas);
+  setText('.slbl',t.scroll);
+
+  // About-Bereich uebersetzen.
+  // setHtml wird nur dort genutzt, wo absichtlich HTML-Markup enthalten ist.
+  setText('#about .sk',t.aboutTag);
+  setHtml('#about .stit',t.aboutTitle);
+  setHtmlAll('#about .abt p',t.aboutParas);
+  setTextAll('#about .stl',t.stats);
+  setTextAll('#about .lcs .ln',t.languageNames);
+  setTextAll('#about .lcs .lb',t.languageLevels);
+
+  // Projektkopf und Projekt-Metadaten uebersetzen.
+  // Die Listen projectPn/projectNames/projectSubs sind positionsbasiert (7 Projekte).
+  setText('#projects .sk',t.projectsTag);
+  setHtml('#projects .prtop .stit',t.projectsTitle);
+  setText('#projects .pcnt',t.projectsCount);
+  setTextAll('#projects .pn',t.projectPn);
+  setTextAll('#projects .pname',t.projectNames);
+  setTextAll('#projects .psub',t.projectSubs);
+  // Sicherstellen, dass der Saar-Metall-Block immer korrekt uebersetzt wird
+  setText('#projects .project-saar .pn',t.projectPn?.[6]||'');
+  setText('#projects .project-saar .pname',t.projectNames?.[6]||'');
+  setText('#projects .project-saar .psub',t.projectSubs?.[6]||'');
+  // Projektbeschreibungen und Feature-Listen uebersetzen.
+  // Jede Feature-Liste ist an eine konkrete Projektkarte gekoppelt.
+  setHtmlAll('#projects .pdesc',t.projectDescs);
+  setHtmlAll('.project-dailykit .fl li',t.p1List);
+  setHtmlAll('.project-dc .fl li',t.p2List);
+  setHtmlAll('#projects .project-shopping .fl li',t.p3List);
+  setHtmlAll('#projects .project-weather .fl li',t.p4List);
+  setHtmlAll('#projects .project-wiss .fl li',t.p5List);
+  setHtmlAll('#projects .project-ml .fl li',t.p6List);
+  setHtmlAll('#projects .project-saar .fl li',t.p7List);
+  // Zusatzelemente in Projekt 7 (Case-Liste) und Spezialtitel setzen.
+  // Diese Elemente liegen ausserhalb der normalen .fl-Listen.
+  setText('#projects .project-saar .pcase h4',t.p7CaseTitle);
+  setTextAll('#projects .project-saar .pcase li',t.p7CaseList);
+  setText('.project-dc .pcode h4',t.dcSessionTitle);
+  setText('#projects .project-shopping .pcode h4',t.shoppingFlowTitle);
+  setText('#projects .project-ml .pmetric h4',t.mlMetricTitle);
+  setTextAll('#projects .project-ml .pmetric-item span',t.mlMetricLabels);
+
+  // Timeline/Experience-Bereich uebersetzen.
+  // Auch hier gilt: Arrays muessen in derselben Reihenfolge wie im HTML stehen.
+  setText('#experience .sk',t.expTag);
+  setHtml('#experience .stit',t.expTitle);
+  setTextAll('#experience .exf li',t.expFilters);
+  setTextAll('#experience .eis .ei .eip',t.expDates);
+  setTextAll('#experience .eis .ei .eib',t.expBadges);
+  setTextAll('#experience .eis .ei .eiro',t.expTitles);
+  // Erste Berufsposition zusaetzlich explizit setzen (Saar Metall)
+  setText('#experience .eis .ei:nth-child(1) .eib',t.expBadges?.[0]||'');
+  setText('#experience .eis .ei:nth-child(1) .eiro',t.expTitles?.[0]||'');
+  setTextAll('#experience .eis .ei .eico',t.expCompanies);
+  setHtmlAll('#experience .eis .ei:nth-child(1) .ept li',t.expList1);
+  setHtmlAll('#experience .eis .ei:nth-child(2) .ept li',t.expList2);
+  setHtmlAll('#experience .eis .ei:nth-child(3) .ept li',t.expList3);
+
+  // Skills-Bereich uebersetzen.
+  // Jede .skc-Karte hat ihre eigene Liste mit genau passender Laenge.
+  setText('#skills .sk',t.skillsTag);
+  setHtml('#skills .stit',t.skillsTitle);
+  setTextAll('#skills .skt',t.skillCardTitles);
+  setTextAll('#skills .skc:nth-child(1) .sktx',t.skills1);
+  setTextAll('#skills .skc:nth-child(2) .sktx',t.skills2);
+  setTextAll('#skills .skc:nth-child(3) .sktx',t.skills3);
+  setTextAll('#skills .skc:nth-child(4) .sktx',t.skills4);
+
+  // Kontaktbereich und Footer uebersetzen.
+  // contactLocation enthaelt bewusst Zeilenumbrueche per <br>.
+  setText('#contact .sk',t.contactTag);
+  setHtml('#contact .ctbig',t.contactTitle);
+  setHtml('#contact .ctloc',t.contactLocation);
+  setTextAll('footer .ft',t.footer);
+};
+
+// Sprachbuttons mit Handlern verbinden
+langButtons.forEach(btn=>{
+  btn.addEventListener('click',()=>setLanguage(btn.dataset.lang));
+});
+// Gespeicherte Sprache lesen (falls vorhanden)
+const savedLang=localStorage.getItem('portfolioLang');
+// Browsersprache auf 2-Zeichen-ISO kuerzen, z.B. de/en/fr
+const browserLang=(navigator.language||'de').slice(0,2).toLowerCase();
+// Prioritaet: gespeicherte Sprache -> Browsersprache -> Deutsch.
+// So startet die Seite immer mit einer gueltigen Sprache.
+const initialLang=I18N[savedLang]?savedLang:(I18N[browserLang]?browserLang:'de');
+// Erste Initialisierung der Seite in gewaehlter Sprache
+setLanguage(initialLang);
+</script>
+</body>
+</html>
+
+
